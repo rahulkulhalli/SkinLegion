@@ -2,14 +2,15 @@ import os
 import shutil
 from random import shuffle
 
-train_data = os.path.join('D:\\', 'ISIC2018', 'output', 'output', 'nv_non_nv', 'train')
-toy_path = os.path.join('D:\\', 'ISIC2018', 'output', 'output', 'nv_non_nv', 'toy_train')
-toy_path_nv = os.path.join('D:\\', 'ISIC2018', 'output', 'output', 'nv_non_nv', 'toy_train', 'NV')
-toy_path_non_nv = os.path.join('D:\\', 'ISIC2018', 'output', 'output', 'nv_non_nv', 'toy_train', 'NON_NV')
+train_data = os.path.join('path/to/your/train/dir')
+# This will create a folder in the following location.
+toy_path = os.path.join('path/to/your/toy/train/dir')
+toy_path_pos = os.path.join('path/to/your/toy/train/dir/pos')
+toy_path_neg = os.path.join('path/to/your/toy/train/dir/neg')
 
 os.makedirs(toy_path)
-os.makedirs(os.path.join(toy_path_nv))
-os.makedirs(os.path.join(toy_path_non_nv))
+os.makedirs(os.path.join(toy_path_pos))
+os.makedirs(os.path.join(toy_path_neg))
 
 classes = os.listdir(train_data)
 for class_name in classes:
