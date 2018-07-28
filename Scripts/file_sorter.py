@@ -2,11 +2,9 @@ import os
 import shutil
 import pandas as pd
 
-GROUND_TRUTH_LABEL_CSV = os.path.join('D:\\', 'ISIC2018', 'ISIC2018_Task3_Training_GroundTruth',
-                                      'ISIC2018_Task3_Training_GroundTruth.csv')
+GROUND_TRUTH_LABEL_CSV = os.path.join('path/to/ISIC2018_Task3_Training_GroundTruth.csv')
 
-IMAGES_DIR = os.path.join('D:\\', 'ISIC2018', 'ISIC2018_Task3_Training_Input',
-                          'ISIC2018_Task3_Training_Input')
+IMAGES_DIR = os.path.join('path/to/ISIC2018_Task3_Training_Input')
 
 print('A total of {} images visible.'.format(str(len(os.listdir(IMAGES_DIR)))))
 
@@ -23,7 +21,7 @@ def get_or_create_folder(path):
 def copy_to_path(image_names, folder_name):
     for image in image_names:
         shutil.copy(src=os.path.join(IMAGES_DIR, image + '.jpg'),
-                    dst=os.path.join('D:\\', 'ISIC2018',
+                    dst=os.path.join('path/to/ISIC2018',
                                      'output', folder_name, image + '.jpg'))
 
     print('Copied {} images to {}'.format(str(len(image_names)), folder_name))
@@ -33,14 +31,14 @@ def copy_to_path(image_names, folder_name):
 print('-------------------------------')
 print('Creating directories...')
 print('-------------------------------')
-get_or_create_folder(os.path.join('D:\\', 'ISIC2018', 'output'))
-get_or_create_folder(os.path.join('D:\\', 'ISIC2018', 'output', 'MEL'))
-get_or_create_folder(os.path.join('D:\\', 'ISIC2018', 'output', 'NV'))
-get_or_create_folder(os.path.join('D:\\', 'ISIC2018', 'output', 'AKIEC'))
-get_or_create_folder(os.path.join('D:\\', 'ISIC2018', 'output', 'BKL'))
-get_or_create_folder(os.path.join('D:\\', 'ISIC2018', 'output', 'BCC'))
-get_or_create_folder(os.path.join('D:\\', 'ISIC2018', 'output', 'DF'))
-get_or_create_folder(os.path.join('D:\\', 'ISIC2018', 'output', 'VASC'))
+get_or_create_folder(os.path.join('path/to/ISIC2018/output'))
+get_or_create_folder(os.path.join('path/to/ISIC2018/output', 'MEL'))
+get_or_create_folder(os.path.join('path/to/ISIC2018/output', 'NV'))
+get_or_create_folder(os.path.join('path/to/ISIC2018/output', 'AKIEC'))
+get_or_create_folder(os.path.join('path/to/ISIC2018/output', 'BKL'))
+get_or_create_folder(os.path.join('path/to/ISIC2018/output', 'BCC'))
+get_or_create_folder(os.path.join('path/to/ISIC2018/output', 'DF'))
+get_or_create_folder(os.path.join('path/to/ISIC2018/output', 'VASC'))
 print('-------------------------------')
 
 # Read the csv.
