@@ -1,6 +1,6 @@
 # Model Zoo
 
-All the models have been developed and tuned in Keras. You may download the models (along with their weights) and their mean images at the following locatioms:
+All the models have been developed and tuned in Keras. You may download the models (along with their weights) and their mean images at the following locations:
 
  - **NV v/s OTHERS**: 
    1) Model: https://ndownloader.figshare.com/files/12538976
