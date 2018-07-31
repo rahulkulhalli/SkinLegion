@@ -14,7 +14,7 @@ All our preprocessing scripts have been added in the 'Scripts' folder.
 
 # Models
 All our trained and fine-tuned models have been added in the 'Models' folder.
-*Please note that all the models have been developed in [Keras](https://github.com/keras-team/keras).*
+*Please note that all the models have been developed in [Keras](https://github.com/keras-team/keras) 2.0.2.*
 
 ## Loading a Model ##
 To load a saved model, please follow the steps mentioned in the notebooks. As an overview:
