@@ -17,5 +17,3 @@ All the models have been developed and tuned in Keras. You may download the mode
  - **AKIEC v/s OTHERS**: 
    1) Model: https://ndownloader.figshare.com/files/12539018
    2) Mean image: https://ndownloader.figshare.com/files/12539051
-
-# ---------------------------------------------------------
