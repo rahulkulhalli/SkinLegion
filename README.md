@@ -6,6 +6,9 @@ Skin Lesion classification for the ISIC2018 challenge attempted at Persitent Sys
  - [Chinmay Savadikar](https://www.github.com/savadikarc)
  - [Rahul Kulhalli](https://www.github.com/rahulkulhalli)
 
+# Dataset
+You may download the HAM10000 dataset from the https://challenge.kitware.com/#phase/5abcbc6f56357d0139260e66 (Note: you will need to register first)
+
 # Notebooks
 All our notebooks have been added in the 'Notebooks' folder.
 
